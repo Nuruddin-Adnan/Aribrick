@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Airbrick</title>
+		<!-- Favicon -->
+		<!-- <link rel="icon" type="image/png" sizes="16x16" href=""> -->
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+		<!-- range slider -->
+		<link rel="stylesheet" href="assets/css/nouislider.min.css">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<!-- Main css -->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main.css.map" />
+	</head>
+
+	<body>
+
+		<!-- header section start  -->
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-light ">
+				<div class="container">
+				  <a class="navbar-brand" href="#">
+					  <img src="assets/images/logo.png" alt="brand-logo">
+				  </a>
+				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					  <li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#">Book a Call</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#">Help & Faq</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#">Login</a>
+					  </li>
+					  <li class="nav-item justify-content-center justify-content-lg-start">
+						<a class="nav-link nav-btn" href="#">Create Account</a>
+						<a href="#" class="nav-link nav-btn nav-btn--sm active">Launch App</a>
+					  </li>
+					 
+					</ul>
+				  </div>
+				</div>
+			  </nav>
+		</header>
+		<!-- header section end  --> 
+
+		<!-- banner section start  -->
+		<section class="banner" style="background: url('assets/images/bg.png') center center/cover no-repeat;">
+			<div class="container">
+				<div class="banner-content">
+					<h2>Democratising the Airbnb investing experience</h2>
+					<p>For the first time, investors around the globe can invest into the UK Rent-to-Rent Short-Term Rental property market through fractional and tokenized ownership. Powered by the Binance Smart Chain (BSC) network.
+
+					</p>
+					<div class="banner-actions">
+						<a href="#" class="btn">Create Account</a>
+						<a href="#" class="btn active">Launch App</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- banner section end  -->
+
+		<!-- investment content start  -->
+		<div class="investment">
+			<div class="container">
+				<div class="investment-content">
+					<div class="investment-range row gx-5 gy-4 gy-lg-0">
+						<div class="col-lg-4 col-md-6">
+						<div class="range-slider">
+							<h2 class="range-slider-title">
+								Investment Amount
+							</h2>
+							<div class="range-slider-wrapper">
+								<div class="output">
+									$<span></span>
+								</div>
+								<div id="inamount"></div> 
+								<div class="range-slider-minmax">
+									<span>$1000</span>
+									<span>$50,000</span>
+								</div>
+							</div>
+						</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+						<div class="range-slider">
+							<h2 class="range-slider-title">
+								Length of Investment
+							</h2>
+							<div class="range-slider-wrapper">
+								<div class="output output-length">
+								  <span></span> Months
+								</div>
+								<div id="inLength"></div> 
+								<div class="range-slider-minmax">
+									<span>1 month</span>
+									<span>60 Month</span>
+								</div>
+							</div>
+						</div>
+						</div>
+						<div class="col-lg-4">
+						<div class="range-slider">
+							<h2 class="range-slider-title">
+								Receive an Approx. 65% APR
+Or over 100% APY(Compounding)
+							</h2>
+							<div class="range-slider-wrapper">
+								<div class="output output-percent">
+									<span></span>%
+								</div>
+								<div id="inPercent"></div> 
+								<div class="range-slider-minmax">
+									<span>30%</span>
+									<span>100%</span>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="investment-initial">
+						<span>Initial Investment & Returns</span>
+						<h6>$<span class="count">36610.28</span> </h6>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- investment content end  -->
+
+
+		<!-- featured slider  -->
+		<section class="featured">
+			<div class="container">
+				<div class="featured-content row align-items-center">
+					<div class="col-lg-2">
+                          <h2 class="featured-title">Featured On:</h2>
+					</div>
+					<div class="col-lg-10">
+						<div class="swiper mySwiper">
+							<div class="swiper-wrapper">
+							  <div class="swiper-slide">
+								<div class="featured-card">
+									<img src="assets/images/featured/img-one.png" alt="">
+								</div>
+							  </div>
+							  <div class="swiper-slide">
+								<div class="featured-card">
+									<img src="assets/images/featured/img-two.png" alt="">
+								</div>
+							  </div>
+							  <div class="swiper-slide">
+								<div class="featured-card">
+									<img src="assets/images/featured/img-three.jpeg" alt="">
+								</div>
+							  </div>
+							  <div class="swiper-slide">
+								<div class="featured-card">
+									<img src="assets/images/featured/img-four.jpeg" alt="">
+								</div>
+							  </div>
+							</div>
+						  </div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- work section start  -->
+		<section class="work">
+			<div class="container">
+				<div class="work-heading">
+					<h2>How it works.</h2>
+					<p>Become A Shareholder Today And Join The Short-Term Rental Revolution.</p>
+				</div>
+
+				<div class="work-content row gy-5 gy-xxl-0"> 
+					<div class="col-xxl-3 col-md-6 col-12">
+						<div class="article-card">
+							<div class="article-card-number">
+								<h6>01</h6>
+							</div>
+							<h2 class="article-card-title">We Find Property</h2>
+							<blockquote>
+								<p>We use complex, data driven risk anaylses to find the best properties Investment properties usually Require a 25% down payment, but Airbrick's Finance, we Rent-to-Rent, hence why our AR is so high!
+								</p>
+								<a href="#">Learn More
+
+								<span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="27.003" height="15.754" viewBox="0 0 27.003 15.754">
+											<g id="arrow-right" transform="translate(-4.5 -10.123)">
+											  <path id="Path_51" data-name="Path 51" d="M22.829,10.454a1.125,1.125,0,0,1,1.593,0l6.75,6.75a1.125,1.125,0,0,1,0,1.593l-6.75,6.75a1.126,1.126,0,1,1-1.593-1.593L28.784,18l-5.956-5.954a1.125,1.125,0,0,1,0-1.593Z" fill="currentColor" fill-rule="evenodd"/>
+											  <path id="Path_52" data-name="Path 52" d="M4.5,18a1.125,1.125,0,0,1,1.125-1.125H29.25a1.125,1.125,0,0,1,0,2.25H5.625A1.125,1.125,0,0,1,4.5,18Z" fill="currentColor" fill-rule="evenodd"/>
+											</g>
+									</svg>
+								</span>
+								</a>
+							</blockquote>
+						</div>
+					</div>
+					<div class="col-xxl-3 col-md-6 col-12">
+						<div class="article-card">
+							<div class="article-card-number">
+								<h6>02</h6>
+							</div>
+							<h2 class="article-card-title">Appreciation of assets</h2>
+							<blockquote>
+								<p>We use complex, data driven risk anaylses to find the best properties Investment properties usually Require a 25% down payment, but Airbrick's Finance, we Rent-to-Rent, hence why our AR is so high!
+								</p>
+								<a href="#">Learn More
+
+								<span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="27.003" height="15.754" viewBox="0 0 27.003 15.754">
+											<g id="arrow-right" transform="translate(-4.5 -10.123)">
+											  <path id="Path_51" data-name="Path 51" d="M22.829,10.454a1.125,1.125,0,0,1,1.593,0l6.75,6.75a1.125,1.125,0,0,1,0,1.593l-6.75,6.75a1.126,1.126,0,1,1-1.593-1.593L28.784,18l-5.956-5.954a1.125,1.125,0,0,1,0-1.593Z" fill="currentColor" fill-rule="evenodd"/>
+											  <path id="Path_52" data-name="Path 52" d="M4.5,18a1.125,1.125,0,0,1,1.125-1.125H29.25a1.125,1.125,0,0,1,0,2.25H5.625A1.125,1.125,0,0,1,4.5,18Z" fill="currentColor" fill-rule="evenodd"/>
+											</g>
+									</svg>
+								</span>
+								</a>
+							</blockquote>
+						</div>
+					</div>
+					<div class="col-xxl-3 col-md-6 col-12">
+						<div class="article-card">
+							<div class="article-card-number">
+								<h6>03</h6>
+							</div>
+							<h2 class="article-card-title">Rental Income via Airbnb</h2>
+							<blockquote>
+								<p>We use complex, data driven risk anaylses to find the best properties Investment properties usually Require a 25% down payment, but Airbrick's Finance, we Rent-to-Rent, hence why our AR is so high!
+								</p>
+								<a href="#">Learn More
+
+								<span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="27.003" height="15.754" viewBox="0 0 27.003 15.754">
+											<g id="arrow-right" transform="translate(-4.5 -10.123)">
+											  <path id="Path_51" data-name="Path 51" d="M22.829,10.454a1.125,1.125,0,0,1,1.593,0l6.75,6.75a1.125,1.125,0,0,1,0,1.593l-6.75,6.75a1.126,1.126,0,1,1-1.593-1.593L28.784,18l-5.956-5.954a1.125,1.125,0,0,1,0-1.593Z" fill="currentColor" fill-rule="evenodd"/>
+											  <path id="Path_52" data-name="Path 52" d="M4.5,18a1.125,1.125,0,0,1,1.125-1.125H29.25a1.125,1.125,0,0,1,0,2.25H5.625A1.125,1.125,0,0,1,4.5,18Z" fill="currentColor" fill-rule="evenodd"/>
+											</g>
+									</svg>
+								</span>
+								</a>
+							</blockquote>
+						</div>
+					</div>
+					<div class="col-xxl-3 col-md-6 col-12">
+						<div class="article-card">
+							<div class="article-card-number">
+								<h6>04</h6>
+							</div>
+							<h2 class="article-card-title">Fractional Tokenized ownership</h2>
+							<blockquote>
+								<p>We use complex, data driven risk anaylses to find the best properties Investment properties usually Require a 25% down payment, but Airbrick's Finance, we Rent-to-Rent, hence why our AR is so high!
+								</p>
+								<a href="#">Learn More
+
+								<span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="27.003" height="15.754" viewBox="0 0 27.003 15.754">
+											<g id="arrow-right" transform="translate(-4.5 -10.123)">
+											  <path id="Path_51" data-name="Path 51" d="M22.829,10.454a1.125,1.125,0,0,1,1.593,0l6.75,6.75a1.125,1.125,0,0,1,0,1.593l-6.75,6.75a1.126,1.126,0,1,1-1.593-1.593L28.784,18l-5.956-5.954a1.125,1.125,0,0,1,0-1.593Z" fill="currentColor" fill-rule="evenodd"/>
+											  <path id="Path_52" data-name="Path 52" d="M4.5,18a1.125,1.125,0,0,1,1.125-1.125H29.25a1.125,1.125,0,0,1,0,2.25H5.625A1.125,1.125,0,0,1,4.5,18Z" fill="currentColor" fill-rule="evenodd"/>
+											</g>
+									</svg>
+								</span>
+								</a>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- work section end  -->
+
+
+
+		<!-- Token sale section start  -->
+		<section class="token">
+			<div class="container">
+				<div class="token-heading">
+					<h2>Token Sale</h2>
+					<p>Since our Airbnb portfolio is already running, a new investor would start receiving rent immediately after the investment.</p>
+				</div>
+
+				<div class="token-content">
+					<div class="token-progress">
+						<div class="token-progress-bar">
+							<div class="progress-line" data-progress="100"></div>
+							<ul class="token-dots">
+                                <li class="dot"></li>
+								<li class="dot"></li>
+								<li class="dot"></li>
+								<li class="dot"></li>
+							</ul>
+							<blockquote class="token-texts">
+								<p>Pre-Sale $1,00 Token price</p>
+								<p>2nd Round $1,15 Token price</p>
+								<p>3nd Round $1,30
+									Token price</p>
+		
+									<p>4th Round $1,45
+										Token price</p>
+										<p>Liquidity Pool Launch</p>
+							</blockquote>
+						</div>
+
+					</div>
+
+					<div class="token-actions">
+						<a href="#" class="btn">Invest Now</a>
+						<a href="#" class="btn">Launch App</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Token sale section end  -->
+
+
+		<!-- feature section start  -->
+		<div class="feature">
+			<div class="container">
+				<div class="feature-content row justify-content-between gy-3  gy-lg-0 ">
+                 <div class="col-lg-2 col-sm-6 col-12">
+					<div class="counter">
+						<div class="counter-shape">
+							<img src="assets/images/icons/icon-2.png" alt="icon">
+						</div>
+						<h2> <span class="count">65</span>%</h2>
+						<p>Average return</p>
+					</div>
+				 </div>
+                 <div class="col-lg-2 col-sm-6 col-12">
+					<div class="counter">
+						<div class="counter-shape">
+							<img src="assets/images/icons/icon-3.png" alt="icon">
+						</div>
+						<h2> $<span class="count">2,296,567</span></h2>
+						<p>Value of assests under management</p>
+					</div>
+				 </div>
+                 <div class="col-lg-2 col-sm-6 col-12">
+					<div class="counter">
+						<div class="counter-shape">
+							<img src="assets/images/icons/icon-1.png" alt="icon">
+						</div>
+						<h2> $<span class="count">125,000</span></h2>
+						<p>Total invested</p>
+					</div>
+				 </div>
+                 <div class="col-lg-2 col-sm-6 col-12">
+					<div class="counter">
+						<div class="counter-shape">
+							<img src="assets/images/icons/icon-4.png" alt="icon">
+						</div>
+						<h2> <span class="count">22</span></h2>
+						<p>Investors and growing</p>
+					</div>
+				 </div>
+                 <div class="col-lg-2 col-sm-6 col-12">
+					<div class="counter">
+						<div class="counter-shape">
+							<img src="assets/images/icons/icon-5.png" alt="icon">
+						</div>
+						<h2> <span class="count">65</span>%</h2>
+						<p>Average return</p>
+					</div>
+				 </div>
+				</div>
+			</div>
+		</div>
+		<!-- feature section end  -->
+
+		<!-- blog content start  -->
+		<section class="blog">
+			<div class="container">
+				<div class="blog-content">
+					<div class="blog-img" data-aos="fade-bottom">
+						<img src="assets/images/articles/img-1.png" alt="img">
+					</div>
+					<div class="blog-text" data-aos="fade-bottom">
+						<span>Bcome a share holder</span>
+						<h2>Rent-to-Rent Explained!</h2>
+						<p>
+							Also known as Rent-to-Serviced Accommodation in the UK or Rental Arbitrage in the USA. Rent-to-Rent is where Airbrick Finance rents a property from a landlord on a 3 to 5 years lease and pays a fixed and guaranteed rent, while short letting the property on Airbnb. This is one of the most profitable property strategies in the UK. It's compliant with UK law and can generate a substantial earning potential for investors.
+						</p>
+						<a href="#" class="btn">Invest now</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- blog content end  -->
+
+
+		
+		<!-- profolio article start  -->
+		<section class="blog blog-portfolio">
+			<div class="container">
+				<div class="blog-content">
+					<div class="blog-text">
+						<h2>Build your portfolio The vacantion economy </h2>
+						<p>
+							Gow your Portfolio with the $1.2 Trillion short term Rental vacation economy by using modern tech and machine learning discover potential passive profits with properties from seaside bungalows, IG inspired tree houses, and dreamy downtown lofts. Get daily updates on what's on offer with our app
+						</p>
+						<a href="#" class="redirect">
+							<span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="25.091" height="25.09" viewBox="0 0 25.091 25.09">
+									<g id="link-45deg" transform="translate(-5.545 -4.421)">
+									  <path id="Path_1" data-name="Path 1" d="M10.646,14.737,7.536,17.845a6.8,6.8,0,0,0,9.616,9.616L21.3,23.317a6.8,6.8,0,0,0-1.877-10.942L18.09,13.7a2.268,2.268,0,0,0-.349.451,4.533,4.533,0,0,1,1.951,7.563l-4.141,4.142a4.535,4.535,0,1,1-6.413-6.413l1.8-1.795a9.106,9.106,0,0,1-.29-2.917Z" transform="translate(0 0.058)" fill="#7e7e7e"/>
+									  <path id="Path_2" data-name="Path 2" d="M12.852,15.689l.379-.379a4.511,4.511,0,0,1,2.031-1.173,4.511,4.511,0,0,1,1.173-2.031l.379-.379a6.808,6.808,0,0,0-3.309.651,6.786,6.786,0,0,0-.653,3.309Z" transform="translate(0.053 0.053)" fill="#7e7e7e"/>
+									  <path id="Path_3" data-name="Path 3" d="M14.833,10.556A6.8,6.8,0,0,0,16.709,21.5l1.757-1.759a4.533,4.533,0,0,1-2.031-7.584l4.141-4.143a4.535,4.535,0,1,1,6.413,6.413l-1.8,1.795a9.112,9.112,0,0,1,.29,2.917l3.109-3.109a6.8,6.8,0,1,0-9.616-9.616Z" transform="translate(0.053)" fill="#7e7e7e"/>
+									  <path id="Path_4" data-name="Path 4" d="M22.524,21.4a6.777,6.777,0,0,0,.653-3.309l-.379.379a4.511,4.511,0,0,1-2.031,1.173,4.511,4.511,0,0,1-1.173,2.031l-.379.379a6.808,6.808,0,0,0,3.309-.651Z" transform="translate(0.099 0.099)" fill="#7e7e7e"/>
+									</g>
+								  </svg>
+								  
+							</span>
+							http://www.airbnb.co.uk/p/airbrick
+						</a>
+						<a href="#" class="btn">Invest now</a>
+					</div>
+
+	
+					<div class="blog-card__wrapper">
+						<span>*For Illustrative purposes only</span>
+						<div class="blog-card">
+
+							<!-- img content  -->
+							<div class="blog-card__img">
+								<img src="assets/images/articles/img-4.png" alt="card-img">
+								<span class="icon">
+									<img src="assets/images/icons/love.svg" alt="icon">
+								</span>
+							</div>
+							<div class="blog-card__info">
+								<span>The Sphire</span>
+								<div class="text">
+									<span>Occupancy</span>  
+									<div class="circle-small">
+										<span class="text"> 
+											88%
+										</span>
+										<svg>
+											<circle class="bg" cx="40" cy="40" r="37"></circle>
+											<circle class="progress two" cx="40" cy="40" r="37"></circle>
+										</svg>
+									</div>  Property Current in Contract
+								</div>
+								<!-- tags  -->
+								<ul>
+									<li>
+										<p>
+											<span>
+												<img src="assets/images/icons/home.svg" alt="icon">
+											</span>
+											single family
+										</p>
+									</li>
+									<li>
+										<p>
+											<span>
+												<img src="assets/images/icons/bed.svg" alt="icon">
+											</span>
+											4 bed
+										</p>
+									</li>
+									<li>
+										<p>
+											<span>
+												<img src="assets/images/icons/bath.svg" alt="icon">
+											</span>
+											3 bath
+										</p>
+									</li>
+									<li>
+										<p>
+											<span>
+												<img src="assets/images/icons/sq.svg" alt="icon">
+											</span>
+											1848 s1.ft
+										</p>
+									</li>
+								</ul>
+								<div class="swiper blog-card__slider container">
+									<div class="swiper-wrapper ">
+										<div class="swiper-slide">
+										 <div class="blog-card__sm-img">
+											<img src="assets/images/featured/img-five.png" alt="">
+										 </div>
+										</div>
+										<div class="swiper-slide">
+										 <div class="blog-card__sm-img">
+											<img src="assets/images/featured/img-six.png" alt="">
+										 </div>
+										</div>
+										<div class="swiper-slide">
+										 <div class="blog-card__sm-img">
+											<img src="assets/images/featured/img-seven.png" alt="">
+										 </div>
+										</div>
+										<div class="swiper-slide">
+										 <div class="blog-card__sm-img">
+											<img src="assets/images/featured/img-six.png" alt="">
+										 </div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						
+						<a href="#" class="blog-icon" data-aos="fade-up">
+							Full Portfolio
+						   <span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="56.221" height="15.753" viewBox="0 0 56.221 15.753">
+								<g id="arrow-right" transform="translate(-4.5 -10.124)">
+								  <path id="Path_60" data-name="Path 60" d="M22.829,10.454a1.125,1.125,0,0,1,1.593,0l6.75,6.75a1.125,1.125,0,0,1,0,1.593l-6.75,6.75a1.126,1.126,0,1,1-1.593-1.593L28.784,18l-5.956-5.954a1.125,1.125,0,0,1,0-1.593Z" transform="translate(29.218)" fill="#484848" fill-rule="evenodd"/>
+								  <path id="Path_61" data-name="Path 61" d="M4.5,18c0-.621,1.072-1.125,2.4-1.125H57.2c1.323,0,2.4.5,2.4,1.125s-1.072,1.125-2.4,1.125H6.9C5.572,19.125,4.5,18.621,4.5,18Z" fill="#484848" fill-rule="evenodd"/>
+								</g>
+							  </svg>
+							  
+						   </span>
+						</a>
+
+						<div class="shape">
+							<img src="assets/images/progressbar.png" alt="icon">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- profolio article end  -->
+		
+
+		<!-- Charts Content Start  -->
+		<section class="charts">
+			<div class="container">
+				<div class="charts-content row">
+					<div class="col-lg-6">
+						<div class="charts-content">
+							<div class="charts-heading">
+								<h2>TOKEN DISTRIBUTION ( $1,000,000)</h2>
+							</div>
+							<canvas id="tokenChart"></canvas>
+
+							<div class="charts-text">
+								<p>
+									100% of Funds raised are to be invested in the addition of properties for the portfolio or for the maintenance of the same.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="charts-content">
+							<div class="charts-heading">
+								<h2>PROFIT DISTRIBUTION</h2>
+							</div>
+							<canvas id="profitChart"></canvas>
+
+							<div class="charts-text">
+								<p>
+									*Tokens are locked for 36-month period via Smart Contracts
+
+
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Charts Content end  -->
+
+
+		<!-- time line content start   -->
+		<section class="timeline">
+			<div class="container">
+				<div class="timeline-heading">
+					<h2>Time Line</h2>
+				</div>
+				<div class="timeline-content">
+					<div class="timeline-card">
+						<div class="timeline-btn">
+							Q4 2021
+						</div>
+						<blockquote >
+							<h2>Launch of MPGBeta</h2>
+							<p>
+								The Marchan payment Gateway and dispute central dApp beta
+							</p>
+						</blockquote>
+					</div>
+					<div class="timeline-card">
+						<blockquote>
+							<h2>Exchange listing </h2>
+							<p>
+								Global Echange listing 
+							</p>
+						</blockquote>
+						<div class="timeline-btn">
+							19 Aug 2021
+						</div>
+
+					</div>
+					<div class="timeline-card">
+						<div class="timeline-btn">
+							July 2021
+						</div>
+						<blockquote>
+							<h2>Announcing Partnership </h2>
+							<p>
+								Announcing the third big partnership 
+							</p>
+						</blockquote>
+					</div>
+					<div class="timeline-card">
+						<blockquote>
+							<h2>Exchange listing </h2>
+							<p>
+								Listing on uniswap
+							</p>
+						</blockquote>
+						<div class="timeline-btn">
+							6 July 2021
+						</div>
+
+					</div>
+					<div class="timeline-card">
+						<div class="timeline-btn">
+							Q4 202130 June 2021
+						</div>
+						<blockquote>
+							<h2>Launchpad ICO Ending </h2>
+							<p>
+								Ending the launchpad ICO 
+Funding 
+							</p>
+						</blockquote>
+					</div>
+					<div class="timeline-card">
+						<blockquote>
+							<h2> Project launched </h2>
+							<p>
+								The Merchange protocol Project was privatly launched by Hips Payment Group
+							</p>
+						</blockquote>
+						<div class="timeline-btn">
+							June 2020
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- time line content end  -->
+
+
+		<!-- featured article start  -->
+		<section class="blog blog-feature">
+			<div class="container">
+				<div class="blog-content">
+					<div class="blog-img" data-aos="fade-right">
+						<img src="assets/images/articles/img-2.png" alt="img">
+						<div class="blog-icon">
+							<img src="assets/images/icons/airbnb.png" alt="icon">
+						</div>
+					</div>
+					<div class="blog-text" data-aos="fade-left">
+						<span>FEATURED ARTICLES</span>
+						<h2>Billionaires Put Big Money In The Short Term Rental Market | Here's Why</h2>
+						<p>
+							reAlpha is seeking to spend as much as $1.5 billion, including debt, to buy short-term rentals at an unprecedented scale. Chief Executive Officer Giri Devanur said in an interview that the money would be enough to purchase roughly 5,000 homes.
+							Show Me What's Possible
+						</p>
+						<a href="#" class="redirect">
+							Show Me What's Possible
+							<span>
+							      <img src="assets/images/icons/arrow.svg" alt="">
+							</span>
+						</a>
+						<a href="#" class="btn">Invest now</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- featured article end  -->
+
+		<!-- how section start  -->
+		<section class="how">
+			<div class="container">
+				<div class="how-heading">
+					<h2>How does it work</h2>
+				</div>
+               <div class="how-content row  gx-0 gy-4 gy-sm-0">
+
+				   <div class=" offset-lg-6 col-lg-6 " >
+					   <div class="flow flow-right">
+						   <div class="flow-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="41.911" height="48.897" viewBox="0 0 41.911 48.897">
+								<path id="file-text-o" d="M40.056,10.369a6.338,6.338,0,0,1,1.309,2.074,6.328,6.328,0,0,1,.546,2.4V46.278a2.611,2.611,0,0,1-2.62,2.62H2.62a2.523,2.523,0,0,1-1.855-.765A2.533,2.533,0,0,1,0,46.278V2.62A2.523,2.523,0,0,1,.765.765,2.533,2.533,0,0,1,2.62,0H27.068a6.294,6.294,0,0,1,2.4.546,6.368,6.368,0,0,1,2.074,1.309ZM27.94,3.711v10.26H38.2a2.982,2.982,0,0,0-.6-1.119L29.059,4.311a2.982,2.982,0,0,0-1.119-.6ZM38.418,45.4V17.463H27.068a2.611,2.611,0,0,1-2.62-2.62V3.492H3.492V45.4H38.418ZM10.477,21.828a.841.841,0,0,1,.873-.873H30.56a.841.841,0,0,1,.873.873v1.747a.841.841,0,0,1-.873.873H11.351a.841.841,0,0,1-.873-.873ZM30.56,27.94a.841.841,0,0,1,.873.873V30.56a.841.841,0,0,1-.873.873H11.351a.841.841,0,0,1-.873-.873V28.814a.841.841,0,0,1,.873-.873Zm0,6.985a.841.841,0,0,1,.873.873v1.747a.841.841,0,0,1-.873.873H11.351a.841.841,0,0,1-.873-.873V35.8a.841.841,0,0,1,.873-.873Z" fill="currentColor"/>
+							  </svg>
+							  
+						   </div>
+						   <div class="flow-text" data-aos="fade-left">
+							   <h2>1.Register</h2>
+							   <p>Our Registration process is streamlined for ease of use and speed. You simply create your account and submit your metamask wallet address. We'll check that everything is in order and notify your as soon as you're good to</p>
+						   </div>
+					   </div>
+				   </div>
+
+				   <div class="col-lg-6 offset-0 offset-xxl-1  ">
+					   <div class="flow flow-left">
+						<div class="flow-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="60.857" height="40.571" viewBox="0 0 60.857 40.571">
+								<path id="credit-card-alt" d="M0,36.345V20.286H60.857V36.345a4.236,4.236,0,0,1-4.226,4.226H4.226A4.074,4.074,0,0,1,1.241,39.33,4.061,4.061,0,0,1,0,36.345Zm16.9-5.917v3.381H27.048V30.428Zm-10.143,0v3.381h6.762V30.428ZM56.631,0a4.074,4.074,0,0,1,2.985,1.241,4.061,4.061,0,0,1,1.241,2.985v5.917H0V4.226A4.074,4.074,0,0,1,1.241,1.241,4.061,4.061,0,0,1,4.226,0Z" fill="currentColor"/>
+							  </svg>
+							  
+						   </div>
+						   <div class="flow-text" data-aos="fade-right">
+							   <h2>2. Purchase your Brick$</h2>
+							   <p>invest in our Portfolio by buying Brick$ ( Brick shares ) Using your preferred payment method. </p>
+							   <img src="assets/images/payment.png" alt="">
+						   </div>
+
+					   </div>
+				   </div>
+				
+
+				   <div class="col-lg-6 offset-lg-6">
+					   <div class="flow flow-right">
+						   <div class="flow-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="41.911" height="48.897" viewBox="0 0 41.911 48.897">
+								<path id="file-text-o" d="M40.056,10.369a6.338,6.338,0,0,1,1.309,2.074,6.328,6.328,0,0,1,.546,2.4V46.278a2.611,2.611,0,0,1-2.62,2.62H2.62a2.523,2.523,0,0,1-1.855-.765A2.533,2.533,0,0,1,0,46.278V2.62A2.523,2.523,0,0,1,.765.765,2.533,2.533,0,0,1,2.62,0H27.068a6.294,6.294,0,0,1,2.4.546,6.368,6.368,0,0,1,2.074,1.309ZM27.94,3.711v10.26H38.2a2.982,2.982,0,0,0-.6-1.119L29.059,4.311a2.982,2.982,0,0,0-1.119-.6ZM38.418,45.4V17.463H27.068a2.611,2.611,0,0,1-2.62-2.62V3.492H3.492V45.4H38.418ZM10.477,21.828a.841.841,0,0,1,.873-.873H30.56a.841.841,0,0,1,.873.873v1.747a.841.841,0,0,1-.873.873H11.351a.841.841,0,0,1-.873-.873ZM30.56,27.94a.841.841,0,0,1,.873.873V30.56a.841.841,0,0,1-.873.873H11.351a.841.841,0,0,1-.873-.873V28.814a.841.841,0,0,1,.873-.873Zm0,6.985a.841.841,0,0,1,.873.873v1.747a.841.841,0,0,1-.873.873H11.351a.841.841,0,0,1-.873-.873V35.8a.841.841,0,0,1,.873-.873Z" fill="currentColor"/>
+							  </svg>
+							  
+						   </div>
+						   <div class="flow-text" data-aos="fade-left">
+							   <h2>3. Receive your token</h2>
+							   <p>
+								After manual check, You will receive your tokens in the digital wallet registered. The Brick$ Represent your share in entire portfolio of properties.
+							   </p>
+						   </div>
+					   </div>
+				   </div>
+				   <div class="col-lg-6 offset-0 offset-xxl-1">
+					   <div class="flow flow-left ">
+						<div class="flow-icon">
+							<svg id="Group_48" data-name="Group 48" xmlns="http://www.w3.org/2000/svg" width="45.708" height="45.708" viewBox="0 0 45.708 45.708">
+								<path id="Path_72" data-name="Path 72" d="M-629.292,67.571v36.424a8.393,8.393,0,0,1-.381,1.127,4.362,4.362,0,0,1-4.031,2.514c-.451.016-.9,0-1.39,0v2.07h-4.732v-2.033h-24.64v2.033H-669.2V107.64c-.522,0-.979.019-1.435,0a4.36,4.36,0,0,1-4.062-2.676,8.223,8.223,0,0,1-.306-.966V67.571a1.242,1.242,0,0,0,.085-.2,4.257,4.257,0,0,1,3.033-3.193c.208-.068.421-.122.632-.182h38.209c.1.031.19.069.288.093a4.332,4.332,0,0,1,3.247,2.812C-629.424,67.123-629.362,67.349-629.292,67.571Zm-5.475,34.545V69.534h-34.8V76.6h-1.575v1.913h1.566V93.141h-1.561v1.944h1.617v7.031Z" transform="translate(675 -64)" fill="currentColor"/>
+								<path id="Path_73" data-name="Path 73" d="M-598.913,170.017v-5.779h1.569V162.3H-598.9V147.677h1.557v-1.923H-598.9v-5.805H-566.8v30.068Zm25.3-12.012a3.069,3.069,0,0,0,3.2-3.018,3.089,3.089,0,0,0-3.15-3.033,3.129,3.129,0,0,0-3.192,3.008A3.1,3.1,0,0,0-573.617,158Z" transform="translate(605.706 -133.169)" fill="currentColor"/>
+							  </svg>
+							  
+						   </div>
+						   <div class="flow-text" data-aos="fade-right">
+							   <h2>4.The Vault </h2>
+							   <p>invest in our Portfolio by buying Brick$ ( Brick shares ) Using your preferred payment method.</p>
+						   </div>
+
+					   </div>
+				   </div>
+				
+
+				<div class="col-lg-6 offset-lg-6">
+					<div class="flow flow-right">
+						<div class="flow-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="60.949" height="48.276" viewBox="0 0 60.949 48.276">
+								<g id="money-svgrepo-com_1_" data-name="money-svgrepo-com (1)" transform="translate(0 -50.839)">
+								  <path id="Path_75" data-name="Path 75" d="M43.736,76.075a4.647,4.647,0,0,1-4.213,0,1.293,1.293,0,0,1-.012-2.443,4.647,4.647,0,0,1,4.213,0A1.288,1.288,0,0,1,43.736,76.075Zm-22.2-15.256a4.647,4.647,0,0,0-4.213,0,1.293,1.293,0,0,0,.012,2.443,4.647,4.647,0,0,0,4.213,0A1.293,1.293,0,0,0,21.538,60.819Zm37.99,14.059-17.8,10.345a7.657,7.657,0,0,1-6.942,0L1.558,66.042c-1.919-1.109-1.932-2.917-.025-4.026l17.8-10.345a7.657,7.657,0,0,1,6.942,0L59.49,70.853C61.422,71.962,61.434,73.769,59.527,74.879Zm-6.718.449a5.888,5.888,0,0,1-.985-.436c-1.944-1.122-1.957-2.941-.025-4.076a5.623,5.623,0,0,1,.96-.436L26.9,55.448a3.044,3.044,0,0,1-.586.411,7.763,7.763,0,0,1-7.03,0,4.013,4.013,0,0,1-.561-.386L8.089,61.655a5.6,5.6,0,0,1,.673.324c1.944,1.122,1.957,2.941.025,4.063a6.209,6.209,0,0,1-.71.337L33.864,81.273c.125-.087.262-.187.411-.274a7.763,7.763,0,0,1,7.03,0,4.147,4.147,0,0,1,.76.561ZM.623,71.638l34.8,20.092.486.287.7.4a3.883,3.883,0,0,0,3.552,0L60.113,80.824A.91.91,0,0,0,60.1,79.1a3.274,3.274,0,0,0-2.966,0L38.364,90.01,3.652,69.968a3.438,3.438,0,0,0-2.966-.1C-.212,70.342-.224,71.152.623,71.638ZM60.138,85.373a3.274,3.274,0,0,0-2.966,0L38.4,96.292,3.689,76.237a3.438,3.438,0,0,0-2.966-.1c-.9.474-.922,1.271-.075,1.757L35.46,98l.5.287.7.4a3.883,3.883,0,0,0,3.552,0L60.163,87.093C60.973,86.62,60.961,85.847,60.138,85.373ZM38.114,72.822a16.663,16.663,0,0,1-15.156.012c-4.2-2.418-4.2-6.344-.025-8.775a16.663,16.663,0,0,1,15.156-.012C42.29,66.466,42.29,70.4,38.114,72.822Zm-1.1-5.06-.075-.137A5.187,5.187,0,0,0,35.41,66.3a7,7,0,0,0-.81-.4,7.787,7.787,0,0,0-2.48-.6,8.884,8.884,0,0,0-3.278.374l-.125.037-.922-.536a.556.556,0,0,0-.523,0l-.586.337a.164.164,0,0,0,0,.312l.723.411c-.162.087-.324.187-.474.274l-.723-.411a.556.556,0,0,0-.523,0l-.586.337a.164.164,0,0,0,0,.312l.872.5a5.294,5.294,0,0,0-.436.486,1.908,1.908,0,0,0,.125,2.592,5.009,5.009,0,0,0,1.184.947,8.015,8.015,0,0,0,1.546.673c.312.1.636.187.96.262a.619.619,0,0,0,.673-.174,4.422,4.422,0,0,0,.4-.586c.087-.137.062-.224-.075-.312a.416.416,0,0,0-.15-.062c-.361-.125-.723-.237-1.072-.374a6.876,6.876,0,0,1-.86-.4,3,3,0,0,1-.748-.586,1.039,1.039,0,0,1,.075-1.521l1.857,1.072a.556.556,0,0,0,.523,0l.586-.337a.164.164,0,0,0,0-.312L28.517,67.45c.162-.1.324-.187.474-.274l2.044,1.172a.556.556,0,0,0,.523,0l.586-.337a.164.164,0,0,0,0-.312l-1.782-1.022.025-.012a4.351,4.351,0,0,1,2.119-.025,4.544,4.544,0,0,1,1.221.486,3.734,3.734,0,0,1,.7.511c.237.2.436.424.661.623.037.025.062.05.1.075a.688.688,0,0,0,.536.05c.337-.075.661-.15.985-.237C37.005,68.073,37.1,67.949,37.018,67.762Z" transform="translate(0)" fill="currentColor"/>
+								</g>
+							  </svg>
+							  
+						</div>
+						<div class="flow-text" data-aos="fade-left">
+							<h2>5. Daily rent</h2>
+							<p>
+								Receive rent daily in BUSD (stable coin pegged to the dollar). Smart Contract automatically and transparently pays out rent proportionally to all token holders. Thanks to the Short Term Rental market, the rental profits generated are beyond the traditional real estate market.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6 offset-0 offset-xxl-1">
+					<div class="flow flow-left">
+						<div class="flow-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="60.857" height="40.571" viewBox="0 0 60.857 40.571">
+								<path id="credit-card-alt" d="M0,36.345V20.286H60.857V36.345a4.236,4.236,0,0,1-4.226,4.226H4.226A4.074,4.074,0,0,1,1.241,39.33,4.061,4.061,0,0,1,0,36.345Zm16.9-5.917v3.381H27.048V30.428Zm-10.143,0v3.381h6.762V30.428ZM56.631,0a4.074,4.074,0,0,1,2.985,1.241,4.061,4.061,0,0,1,1.241,2.985v5.917H0V4.226A4.074,4.074,0,0,1,1.241,1.241,4.061,4.061,0,0,1,4.226,0Z" fill="currentColor"/>
+							  </svg>
+							  
+						   </div>
+						<div class="flow-text" data-aos="fade-right">
+							<h2>6.Reinvest or cash out</h2>
+							<p>
+								Claim your rent and feel free to reinvest for more BRICK$ and enjoy the power of compounding or convert BUSD to your currency of choice and withdraw to your bank account.
+							</p>
+						</div>
+
+					</div>
+				</div>
+			   </div>
+			</div>
+		</section>
+		<!-- how section end  -->
+
+
+		<!-- finiance content start  -->
+		<section class="finance">
+			<div class="container">
+				<div class="finance-heading">
+					<h2>WHY YOU SHOULD INVEST YOUR MONEY
+						WITH AIRBRICK FINANCE?</h2>
+				</div>
+				<div class="finance-content row gy-5 gy-lg-0">
+                    <div class="col-lg-4 col-md-6">
+						<div class="article-card article-card-two">
+							<div class="article-card-number">
+								<h6>01</h6>
+							</div>
+							<h2 class="article-card-title">We Find Property</h2>
+							<blockquote>
+								<p>There's a reason half of billionaires invest 21-40% of their wealth in real estate.ⁱ It delivers returns. Now with the disruption to traditional real estate created by Airbnb, the short-term rental model has created new opportunities for investors.
+								</p>
+							</blockquote>
+						</div>
+					</div>
+                    <div class="col-lg-4 col-md-6">
+						<div class="article-card article-card-two">
+							<div class="article-card-number">
+								<h6>02</h6>
+							</div>
+							<h2 class="article-card-title">Short-Term Results</h2>
+							<blockquote>
+								<p>With Airbrick Finance you don’t have to wait years or decades to see the returns on your investment which means it is the perfect way to turn a profit quickly. The only problem? Traditional real estate investing is hard… We decided it doesn’t have to be. We replaced traditional down payments, headaches, and sweat equity with technology and scalbility with the power of Airbnb and the Short-term industry.
+								</p>
+							</blockquote>
+						</div>
+					</div>
+                    <div class="col-lg-4 col-md-6">
+						<div class="article-card article-card-two">
+							<div class="article-card-number">
+								<h6>03</h6>
+							</div>
+							<h2 class="article-card-title">Total control, total
+								transparency</h2>
+							<blockquote>
+								<p>Enjoy total control of your investment. Reinvest or cash out? You decide. Regardless of your decision, you can keep track of all transactions on the Binance Smart Chain explorer. Airbrick Finance utilises blockchain to be as transparent as possible.
+								</p>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- finiance content end  -->
+
+		<!-- Call to Action start  -->
+		<section class="callto">
+			<div class="container">
+				<div class="callto-content">
+					 <div class="callto-logo" data-aos="fade-down">
+						 <img src="assets/images/logo-shade.png" alt="logo">
+					 </div>
+					 <p>We plan to disrupt the market, grow our portfolio, and generate recurring revenue as we go.
+					</p>
+					<a href="#" class="btn">Invest now</a>
+				</div>
+			</div>
+		</section>
+		<!-- Call to Action end  -->
+
+		<!-- All js Goes here -->
+		<script src="assets/js/jquery-3.6.0.min.js"></script>
+		<script src="assets/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/js/swiper-bundle.min.js"></script>
+		<script src="assets/js/jquery.waypoints.min.js"></script>
+		<script src="assets/js/jquery.countup.js"></script>
+		<script src="assets/js/nouislider.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js"></script>
+		<script src="assets/js/Chart.PieceLabel.js"></script>
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+		<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script src="assets/js/app.js"></script>
+		<script>
+
+		</script>
+	</body>
+</html>
